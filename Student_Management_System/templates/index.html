@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<figure>
+    <img src="{{ url_for('static', filename='/images/uoemlogo.png') }}" class="logo">
+    <figcaption>No 1 university in Africa!</figcaption>
+</figure>
+
+<p>Welcome back, {{ username }}!</p>
+
+<ul>
+    <li><a href="{{ url_for('units') }}">Register Units</a></li>
+    <li><a href="{{ url_for('view_units') }}">Units</a></li>
+    <li><a href="#support">Support</a></li>
+</ul>
+
+<section id="support">
+    Tel: 0755141285
+    Email: francisngugi004@gmail.com
+</section>
+
+
+{% endblock %}
+
